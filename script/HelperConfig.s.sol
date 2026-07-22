@@ -46,7 +46,7 @@ function getMainnetEthConfig() public pure returns (NetworkConfig memory) {
         });
         return mainnetConfig;
     }
-    function getOrCreateAnvilEthConfig() public pure returns (NetworkConfig memory) {
+    function getOrCreateAnvilEthConfig() public  returns (NetworkConfig memory) {
         if (activeNetworkConfig.priceFeed != address(0)) {
             return activeNetworkConfig;
         }
